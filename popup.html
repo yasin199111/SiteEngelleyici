@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Site Engelleme Eklentisi</title>
+  <style>
+    body {
+      width: 500px;
+      text-align: center;
+    }
+  </style>
+  <script src="popup.js"></script>
+</head>
+<body>
+
+  <div id="savedData">
+    <h4>Duolingo Veriler</h4>
+    <p id="savedDuolingoPuan"></p>
+    <p id="savedOnSonEtkilesim"></p>
+    <p id="savedapiURL"></p>
+    <label for="apiURL">Duolingo api URL :</label>
+    <input  id="apiURL" ><br>
+  </div>
+
+  <h3>Engellenecek Siteler</h3>
+  <label for="siteUrls">Engellenecek Siteler (Her birini bir alt satıra yazın):</label>
+  <textarea id="siteUrls"  rows="20" cols="100" placeholder="https://example1.com\nhttps://example2.com"></textarea><br>
+  <button id="saveBtn">Kaydet</button>
+</body>
+</html>
